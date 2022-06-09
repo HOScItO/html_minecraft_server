@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+header {
+	width: 100%;
+	padding: 0px 35px;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	color: white; 
+}
+
+header li {
+	line-height: 60px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 27px;
+}
+
+header li a { color: white; border-bottom: 2px solid transparent; }
+header li a:hover {border-color: white;}
+
+header ul div, header ul li { display: inline-block; }
+
+header div { vertical-align: middle; !important }
+
+header ul .dleft { float: left; }
+header ul .dright { float: right; }
+
+header ul .dright li {
+	margin-right: 25px;
+	text-transform: uppercase;
+}
+
+header ul .dright li:last-child {
+	margin-right: 0px;
+}
+
+#hero {
+	width: 100%;
+	height: 101vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cover.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+  	color: white;
+  	border-bottom: 3px dashed white;
+}
+
+#hero h1 {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+#hero p {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -45%);
+	font-family: 'Noto Sans', sans-serif;
+	width: 70%;
+	font-size: 20px;
+	font-weight: bold;
+	font-stretch: ultra-expanded;
+}
+
+#hero button {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -65%);
+	width: 250px;
+	height: 65px;
+	font-size: 25px;
+}
+
+#available {
+	width: 100%;
+	height: 35vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cave.png");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+  	color: white;
+  	border-bottom: 3px dashed white;
+}
+
+#available h1 {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+}
+
+#available ul { 
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+}
+
+#available ul li {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+#available ul li i {
+	padding-right: 10px;
+	font-size: 20px;
+}
+
+#available ul li button {
+	width: 200px;
+	height: 45px;
+	font-size: 25px;
+}
+
+button {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color .2s;
+}
+
+button:hover {
+	background-color: #242424;
+	color: white;
+	transition: background-color .2s;
+}
+
+.hdBackground {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#donate {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cave.png");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+  	color: white;
+  	border-bottom: 3px dashed white;
+}
+
+#donate .lcenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 70%;
+	width: 80%;
+	display: inline-flex;
+	justify-content: center;
+}
+
+#donate .card {
+	width: 30%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	position: relative;
+	margin-right: 3%;
+}
+
+#donate .card:last-child {
+	margin-right: 0px;
+}
+
+#donate .card .title {
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+}
+
+#donate .card ul {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	transform: translate(-30%, -40%);
+}
+
+#donate .card ul li {
+	list-style: circle;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 25px;
+}
+
+#donate .card ul li:last-child {
+	margin-bottom: 0px;
+}
+
+#donate button {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, +10%);
+	width: 70%;
+	height: 10%;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	background: none;
+	border: none;
+	color: white;
+	border-bottom: 3px solid #242424;
+	border-radius: 0;
+}
+
+#donate button:hover {
+	border-color: white;
+}
+
+footer {
+	width: 100%;
+	height: 10vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/footer.png");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+  	color: white;
+}
+
+footer h2 {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(-10%, -50%);
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
