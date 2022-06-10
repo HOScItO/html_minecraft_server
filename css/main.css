@@ -8,6 +8,10 @@
 	list-style: none;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 header {
 	width: 100%;
 	padding: 0px 35px;
@@ -89,6 +93,19 @@ header ul .dright li:last-child {
 	font-size: 25px;
 }
 
+#hero .bbottom {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -85%);
+	font-size: 35px;
+	cursor: pointer;
+}
+
+#hero .bbottom:hover {
+	font-size: 45px;
+}
+
 #available {
 	width: 100%;
 	height: 35vh;
@@ -149,11 +166,12 @@ button:hover {
 
 .hdBackground {
 	background-color: rgba(0, 0, 0, 0.5);
+	transition: background-color .5s;
 }
 
 #donate {
 	width: 100%;
-	height: 100vh;
+	height: 101vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cave.png");
 	background-position: center;
   	background-repeat: no-repeat;
@@ -163,7 +181,7 @@ button:hover {
   	border-bottom: 3px dashed white;
 }
 
-#donate .lcenter {
+.lcenter {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -199,12 +217,11 @@ button:hover {
 #donate .card ul {
 	position: absolute;
 	top: 40%;
-	left: 30%;
-	transform: translate(-30%, -40%);
+	left: 50%;
+	transform: translate(-50%, -40%);
 }
 
 #donate .card ul li {
-	list-style: circle;
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 25px;
@@ -234,6 +251,61 @@ button:hover {
 	border-color: white;
 }
 
+#contact {
+	width: 100%;
+	height: 101vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contact.jpeg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+  	color: white;
+  	border-bottom: 3px dashed white;
+}
+
+#contact form {
+	width: 40%;
+}
+
+#contact h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+
+#contact form input, #contact form textarea {
+	display: block;
+	width: 100%;
+	height: 25px;
+}
+
+#contact form input {
+	height: 45px;
+	padding: 25px;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+#contact form textarea {
+	margin-top: 25px;
+	max-width: 100%;
+	resize: none;
+	height: 35%;
+	padding: 25px;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+#contact button {
+	margin-top: 25px;
+	width: 100%;
+	height: 10%;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
 footer {
 	width: 100%;
 	height: 10vh;
@@ -252,4 +324,111 @@ footer h2 {
 	transform: translate(-10%, -50%);
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.modal {
+	width: 60%;
+	height: 60%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	border-radius: 25px;
+}
+
+.modal .title {
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	transform: translate(-10%, -15%);
+	width: 70%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.modal .closeButton {
+	position: absolute;
+	top: 15%;
+	right: 10%;
+	transform: translate(-10%, -15%);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: bolder;
+	color: red;
+	cursor: pointer;
+}
+
+.modal .modalbody {
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	transform: translate(-10%, -15%);
+	width: 70%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+#copyIP {
+	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .dright {
+		display: none;
+	}
+	#hero h1 {
+		font-size: 30px;
+	}
+	#hero p {
+		font-size: 18px;
+	}
+	#hero button {
+		width: 70%;
+	}
+	#donate .lcenter {
+		display: block;
+	}
+	#donate .card {
+		width: 100%;
+		height: 350px;
+		margin-top: 30px;
+		display: none;
+	}
+	#donate .card:first-child {
+		display: block;
+	}
+	#donate .card ul {
+		top: 50%;
+	}
+	#contact form {
+		width: 100%;
+	}
+	#available ul {
+		display: flex;
+		justify-content: center;
+	}
 }

@@ -14,22 +14,25 @@
 	<header id="hds">
 		<ul>
 			<div class="dleft">
-				<li>Minecraft Server</li>
+				<li><a href="#hero" style="border:none;">Minecraft Server</a></li>
 			</div>
 			<div class="dright">
-				<li><a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>
- Vote</a></li>
-				<li><a href="#"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+				<li><a href="#donate"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
  Donate</a></li>
-				<li><a href="#"><i class="fa fa-share" aria-hidden="true"></i>
+				<li><a href="#contact"><i class="fa fa-share" aria-hidden="true"></i>
  Contact</a></li>
+ 				<li><a href="#available"><i class="fa fa-download" aria-hidden="true"></i>
+ Download</a></li>
 			</div>
 		</ul>
 	</header>
 	<section id="hero">
-		<h1>Minecraft Server Name</h1>
+		<h1 id="servername">M</h1>
 		<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Nemo esse neque error totam. Dolore fugit quae, quaerat dolores itaque numquam, quia ducimus? Quasi recusandae voluptates sit nobis repellat, voluptatum sapiente.</p>
-		<button id="ipcopy">Join now</button>
+		<button id="ipcopy" onclick="showIP()">Join now</button>
+		<div class="bbottom" onclick="scrollBottom()">
+			<i class="fa fa-arrow-down" aria-hidden="true"></i>
+		</div>
 	</section>
 	<section id="donate">
 		<div class="lcenter">
@@ -62,6 +65,16 @@
 			</div>
 		</div>
 	</section>
+	<section id="contact">
+		<div class="lcenter">
+			<form action="#">
+				<h1>Contact :</h1>
+				<input type="email" placeholder="Email :" required>
+				<textarea name="contactData" cols="30" rows="10" placeholder="Input there : " required></textarea>
+				<button>Submit</button>
+			</form>
+		</div>
+	</section>
 	<section id="available">
 		<h1>Available on</h1>
 		<ul>
@@ -73,5 +86,12 @@
 	<footer>
 		<h2>© Cătălin Grigoriev - design & code.</h2>
 	</footer>
+	<div class="modal" id="copyIP">
+		<span class="title">Minecraft Server Name</span>
+		<span class="closeButton" onclick="hideIP()">X</span>
+		<div class="modalbody">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quo officia, assumenda molestiae quod sequi provident, nulla. Officia tempora voluptatibus, iusto obcaecati dolores ratione, itaque sunt vitae, libero reiciendis cum.
+		</div>
+	</div>
 </body>
 </html>
